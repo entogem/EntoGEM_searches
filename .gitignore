@@ -1,0 +1,5 @@
+.Rhistory
+./full_results/
+./prescreened_articles/*.ris
+./prescreened_articles/*.xml
+./prescreened_articles/*.csv
