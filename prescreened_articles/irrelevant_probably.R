@@ -11,6 +11,7 @@ detect_terms <- function(df, terms){
   return(bad)
 }
 
+articles <- loaded_results #from the results_assembly script, still in environment
 # First, we separate out articles that are most likely about managed populations
 # We will check back in on them later to see if they have control plots
 
@@ -97,5 +98,6 @@ write.csv(probably_bad, "./human_centered.csv")
 articles <- articles[-bad,]
 
 
+# passing the remaining 99051 titles to pre-screening
 # Whatever is left over
-write.csv(articles, "./still_need_screening.csv")
+#write.csv(articles, "./still_need_screening.csv")
